@@ -26,13 +26,104 @@
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
+
+      .container {
+        max-width: 1206px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .slate-text {
+        color: #363958;
+      }
+
+      .black-text {
+        color: #3e3e3e;
+      }
     </style>
 
     <title>Penguin Fashion</title>
   </head>
-  <body>
+  <body class="font-roboto">
     <!-- ! Header starts -->
-    <header></header>
+    <header class="bg-[#fffbf0] pt-8 pb-11 lg:pt-10 lg:pb-32">
+      <div class="container">
+        <!-- ? Navbar -->
+        <nav class="flex items-center justify-between mb-14 lg:mb-3">
+          <div class="max-w-72">
+            <img src="./assets/icons/logo.png" alt="penguin fashion logo" />
+          </div>
+
+          <ul
+            class="hidden lg:flex items-center gap-12 font-medium text-[#3e3e3e]"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 512 512"
+            class="text-xl lg:hidden"
+          >
+            <path
+              fill="currentColor"
+              d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32m384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"
+            />
+          </svg>
+        </nav>
+
+        <!-- ? banner -->
+        <div
+          class="banner flex flex-col items-center justify-evenly gap-11 lg:flex-row lg:gap-48"
+        >
+          <!-- * banner content -->
+          <div class="banner-content">
+            <h1
+              class="text-[60px] lg:text-[80px] slate-text font-bebas leading-tight"
+            >
+              <span class="text-[#fabe4c]">Be the Penguins</span>
+              <br />
+              of Winter
+            </h1>
+
+            <p class="max-w-[355px] black-text font-normal mb-6 lg:mb-2">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+
+            <button
+              class="text-white bg-gradient-to-b from-[#a4bc46] to-[#85a019] py-5 px-9 flex items-center gap-2 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              Buy Now
+            </button>
+          </div>
+
+          <!-- * banner image -->
+          <div>
+            <img src="./assets/images/model.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- ! Header ends -->
 
     <!-- ! main starts -->
